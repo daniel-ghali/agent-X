@@ -7,9 +7,9 @@ import AutomationSection from "@/components/AutomationSection";
 import AIEvangelistSection from "@/components/AIEvangelistSection";
 import PainPointsSection from "@/components/PainPointsSection";
 import AgentDeploymentSection from "@/components/AgentDeploymentSection";
-import AIPowerSection from "@/components/AIPowerSection";
+
 import ROIVisualizer from "@/components/ROIVisualizer";
-import SolutionSection from "@/components/SolutionSection";
+
 import StepsSection from "@/components/StepsSection";
 import DashboardSection from "@/components/DashboardSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -23,15 +23,16 @@ const Index = () => {
       <HeroSection />
       <LogoBar />
       <FeaturesSection />
-      <AutomationSection />
-      <AIEvangelistSection />
-      <PainPointsSection />
-      <AgentDeploymentSection />
-      <AIPowerSection />
-      <ROIVisualizer />
-      <SolutionSection />
-      <StepsSection />
       <DashboardSection />
+      {/* <ROIVisualizer /> */}
+      <PainPointsSection />
+      <AIEvangelistSection />
+      <AutomationSection />
+      <AgentDeploymentSection />
+      <StepsSection />
+
+
+
       <TestimonialsSection />
       <CTASection />
       <Footer />

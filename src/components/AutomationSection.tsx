@@ -11,10 +11,10 @@ const AutomationSection = () => {
         {/* Header Header */}
         <div className="max-w-3xl mb-24">
           <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-foreground mb-6">
-            GTM at full throttle. <span className="text-muted-foreground font-medium">Execute your revenue strategy with precision.</span>
+            Agent X works 24/7. <span className="text-muted-foreground font-medium">Scale your sales process effortlessly.</span>
           </h2>
           <p className="text-muted-foreground text-xl leading-relaxed">
-            Design powerful workflows, deploy AI, integrate your data and build detailed reports — all in one platform.
+            Design powerful workflows, deploy your AI assistant, and watch your business grow — all in one platform.
           </p>
         </div>
 
@@ -24,9 +24,9 @@ const AutomationSection = () => {
           {/* Left Column: Context */}
           <div className="lg:col-span-3 p-8 md:p-12 border-r border-border/60 flex flex-col justify-between bg-zinc-50/30">
             <div>
-              <h3 className="text-xl font-black mb-4">Automate everything</h3>
+              <h3 className="text-xl font-black mb-4">Automate your sales process</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                You're in control. Automate even the most complex business processes with our powerful, intelligent automation engine.
+                You stay in control. Create workflows that guide every lead through your qualification process, from first message to booked call.
               </p>
             </div>
             
@@ -72,15 +72,15 @@ const AutomationSection = () => {
                     className="flex flex-col items-center"
                   >
                     <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-100 border border-zinc-200 text-[10px] font-bold text-zinc-500 mb-2">
-                       <Zap className="w-3 h-3" /> Trigger
-                       <span className="ml-auto text-green-600 flex items-center gap-1"><CheckCircle2 className="w-2.5 h-2.5" /> Triggered</span>
+                       <MessageSquare className="w-3 h-3" /> Message
+                       <span className="ml-auto text-green-600 flex items-center gap-1"><CheckCircle2 className="w-2.5 h-2.5" /> Received</span>
                     </div>
                     <div className="w-full bg-white border border-green-500/30 rounded-xl p-4 shadow-lg shadow-green-500/5">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-black">When Deal updated</span>
-                        <span className="text-[9px] bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-500">Deals</span>
+                        <span className="text-xs font-black">When user asks question</span>
+                        <span className="text-[9px] bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-500">Chat</span>
                       </div>
-                      <p className="text-[10px] text-muted-foreground">Trigger when a Deal's status is updated</p>
+                      <p className="text-[10px] text-muted-foreground">Trigger when a new user starts a conversation</p>
                     </div>
                   </motion.div>
 
@@ -91,16 +91,16 @@ const AutomationSection = () => {
                     className="flex flex-col items-center mt-4"
                   >
                      <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-100 border border-zinc-200 text-[10px] font-bold text-zinc-500 mb-2">
-                       <span className="text-green-600 flex items-center gap-1"><CheckCircle2 className="w-2.5 h-2.5" /> Completed</span>
+                       <span className="text-green-600 flex items-center gap-1"><CheckCircle2 className="w-2.5 h-2.5" /> Analyzed</span>
                     </div>
                     <div className="w-[180px] bg-white border border-border rounded-xl p-4 shadow-md flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                         <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
-                            <Layers className="w-4 h-4 text-blue-500" />
+                         <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center">
+                            <Zap className="w-4 h-4 text-purple-500" />
                          </div>
-                         <span className="text-xs font-black">Switch</span>
+                         <span className="text-xs font-black">Agent X AI</span>
                       </div>
-                      <span className="text-[9px] bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-500">Condition</span>
+                      <span className="text-[9px] bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-500">Intent</span>
                     </div>
                   </motion.div>
 
@@ -111,12 +111,12 @@ const AutomationSection = () => {
                        transition={{ delay: 1.2 }}
                        className="flex flex-col items-center"
                      >
-                        <span className="text-[9px] font-bold text-green-600 mb-2 uppercase tracking-tighter">Upsell</span>
+                        <span className="text-[9px] font-bold text-green-600 mb-2 uppercase tracking-tighter">Support</span>
                         <div className="w-full bg-white border border-green-500/30 rounded-xl p-4 shadow-lg">
                            <div className="flex items-center justify-between mb-2">
-                              <span className="text-[10px] font-black">Enroll in sequence</span>
+                              <span className="text-[10px] font-black">Answer instantly</span>
                            </div>
-                           <p className="text-[9px] text-muted-foreground whitespace-nowrap">Enroll person in "Power user upsell"</p>
+                           <p className="text-[9px] text-muted-foreground whitespace-nowrap">Agent X resolves query from KB</p>
                         </div>
                      </motion.div>
 
@@ -125,12 +125,12 @@ const AutomationSection = () => {
                        transition={{ delay: 1.4 }}
                        className="flex flex-col items-center opacity-40 grayscale"
                      >
-                        <span className="text-[9px] font-bold text-zinc-400 mb-2 uppercase tracking-tighter">Nurture</span>
+                        <span className="text-[9px] font-bold text-zinc-400 mb-2 uppercase tracking-tighter">Sales</span>
                         <div className="w-full bg-zinc-50 border border-border rounded-xl p-4">
                            <div className="flex items-center justify-between mb-2">
-                              <span className="text-[10px] font-black">Enroll in sequence</span>
+                              <span className="text-[10px] font-black">Book meeting</span>
                            </div>
-                           <p className="text-[9px] text-zinc-400">Enroll person in "Nurture"</p>
+                           <p className="text-[9px] text-zinc-400">Route lead to Calendly flow</p>
                         </div>
                      </motion.div>
                   </div>
@@ -143,12 +143,12 @@ const AutomationSection = () => {
              {/* List of features */}
              <div className="p-8 space-y-3">
                 {[
-                  "Re-engage cold leads",
-                  "MQL lead routing",
-                  "Onboarding hand-off",
-                  "New Deal email campaign",
-                  "Lead form submissions",
-                  "Monitor customer health"
+                  "Re-engage cold prospects",
+                  "Auto-respond to pricing questions",
+                  "Follow up on plan inquiries",
+                  "Confirm booking details",
+                  "Send welcome messages",
+                  "Track lead status updates"
                 ].map((item, i) => (
                   <motion.div 
                     key={item}
@@ -156,7 +156,7 @@ const AutomationSection = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 * i }}
                     className={`p-3 rounded-xl border text-[11px] font-bold transition-all duration-300 ${
-                      item.includes("New Deal") 
+                      item.includes("pricing") 
                       ? "bg-white border-green-500/30 text-foreground shadow-lg shadow-green-500/5 translate-x-[-10px] z-10" 
                       : "bg-white/50 border-border/50 text-muted-foreground"
                     }`}
