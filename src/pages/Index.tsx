@@ -3,8 +3,11 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import LogoBar from "@/components/LogoBar";
 import FeaturesSection from "@/components/FeaturesSection";
+import AutomationSection from "@/components/AutomationSection";
 import AIEvangelistSection from "@/components/AIEvangelistSection";
 import PainPointsSection from "@/components/PainPointsSection";
+import AgentDeploymentSection from "@/components/AgentDeploymentSection";
+import AIPowerSection from "@/components/AIPowerSection";
 import ROIVisualizer from "@/components/ROIVisualizer";
 import SolutionSection from "@/components/SolutionSection";
 import StepsSection from "@/components/StepsSection";
@@ -20,8 +23,11 @@ const Index = () => {
       <HeroSection />
       <LogoBar />
       <FeaturesSection />
+      <AutomationSection />
       <AIEvangelistSection />
       <PainPointsSection />
+      <AgentDeploymentSection />
+      <AIPowerSection />
       <ROIVisualizer />
       <SolutionSection />
       <StepsSection />
