@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -47,12 +48,16 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="text-sm text-muted-foreground hover:text-foreground">
-            Sign in
-          </Button>
-          <Button size="sm" className="bg-foreground text-background hover:bg-foreground/90 rounded-lg px-4 text-sm font-medium">
-            Start for free
-          </Button>
+          <Link to="/login">
+            <Button variant="ghost" size="sm" className="text-sm text-muted-foreground hover:text-foreground">
+              Sign in
+            </Button>
+          </Link>
+          <Link to="/register">
+            <Button size="sm" className="bg-foreground text-background hover:bg-foreground/90 rounded-lg px-4 text-sm font-medium">
+              Start for free
+            </Button>
+          </Link>
         </div>
 
         <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -72,8 +77,12 @@ const Navbar = () => {
           <a href="#testimonials" className="block py-2.5 text-sm text-muted-foreground hover:text-foreground">Customers</a>
           <a href="#pricing" className="block py-2.5 text-sm text-muted-foreground hover:text-foreground">Pricing</a>
           <div className="pt-3 flex flex-col gap-2">
-            <Button variant="ghost" size="sm" className="w-full justify-start">Sign in</Button>
-            <Button size="sm" className="w-full bg-foreground text-background">Start for free</Button>
+            <Link to="/login" onClick={() => setMobileOpen(false)}>
+              <Button variant="ghost" size="sm" className="w-full justify-start">Sign in</Button>
+            </Link>
+            <Link to="/register" onClick={() => setMobileOpen(false)}>
+              <Button size="sm" className="w-full bg-foreground text-background">Start for free</Button>
+            </Link>
           </div>
         </div>
       </div>

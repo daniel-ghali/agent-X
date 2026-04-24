@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 import { BrainIllustration, ChartIllustration, MessageIllustration } from "./Illustrations";
 
 const HeroSection = () => {
@@ -123,20 +124,24 @@ const HeroSection = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3"
         >
-          <Button
-            size="lg"
-            className="bg-foreground text-background hover:bg-foreground/90 rounded-xl px-8 h-12 text-[15px] font-medium shadow-xl shadow-foreground/10 group"
-          >
-            Start for free
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="rounded-xl px-8 h-12 text-[15px] font-medium border-border text-foreground hover:bg-secondary backdrop-blur-sm"
-          >
-            Talk to sales
-          </Button>
+          <Link to="/register">
+            <Button
+              size="lg"
+              className="bg-foreground text-background hover:bg-foreground/90 rounded-xl px-8 h-12 text-[15px] font-medium shadow-xl shadow-foreground/10 group"
+            >
+              Start for free
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+          <Link to="/chat">
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-xl px-8 h-12 text-[15px] font-medium border-border text-foreground hover:bg-secondary backdrop-blur-sm"
+            >
+              Try the chatbot
+            </Button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

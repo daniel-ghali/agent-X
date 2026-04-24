@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -44,20 +45,24 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-foreground text-background hover:bg-foreground/90 rounded-2xl px-10 h-14 text-[16px] font-bold shadow-xl shadow-foreground/10 group"
-            >
-              Start for free
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-2xl px-10 h-14 text-[16px] font-bold border-border text-foreground hover:bg-secondary backdrop-blur-sm"
-            >
-              Talk to sales
-            </Button>
+            <Link to="/register">
+              <Button
+                size="lg"
+                className="bg-foreground text-background hover:bg-foreground/90 rounded-2xl px-10 h-14 text-[16px] font-bold shadow-xl shadow-foreground/10 group"
+              >
+                Start for free
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/chat">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-2xl px-10 h-14 text-[16px] font-bold border-border text-foreground hover:bg-secondary backdrop-blur-sm"
+              >
+                Try the chatbot
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>

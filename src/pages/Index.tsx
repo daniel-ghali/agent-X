@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import LogoBar from "@/components/LogoBar";
@@ -7,9 +6,6 @@ import AutomationSection from "@/components/AutomationSection";
 import AIEvangelistSection from "@/components/AIEvangelistSection";
 import PainPointsSection from "@/components/PainPointsSection";
 import AgentDeploymentSection from "@/components/AgentDeploymentSection";
-
-import ROIVisualizer from "@/components/ROIVisualizer";
-
 import StepsSection from "@/components/StepsSection";
 import DashboardSection from "@/components/DashboardSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -30,9 +26,6 @@ const Index = () => {
       <AutomationSection />
       <AgentDeploymentSection />
       <StepsSection />
-
-
-
       <TestimonialsSection />
       <CTASection />
       <Footer />
